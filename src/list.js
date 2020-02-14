@@ -20,7 +20,7 @@ const List = () => {
       <div class="card">
         <div class="card-body">
           <h1>{item}</h1>
-          <p>Description </p>
+          <p>Description</p>
         </div>
       </div>
     ))
