@@ -20,6 +20,7 @@ nav {
   width: 40%;
   display: flex;
   justify-content: space-around;
+  margin-left: -250px;
   align-items: center;
   list-style: none;
 }
@@ -32,7 +33,12 @@ h1 {
   text-align: center;
 }
 
+p {
+  text-align: center;
+  padding: 10px;
+}
+
 .card {
-  background-color: white;
+  background-color: green;
   margin-right: 40px;
 }
