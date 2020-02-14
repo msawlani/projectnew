@@ -4,7 +4,7 @@ import "./App.css";
 const home = () => {
   return (
     <div>
-      <h1>Welcome User</h1>
+      <h1>Welcome to DJ Tutorials</h1>
     </div>
   );
 };
