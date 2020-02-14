@@ -9,20 +9,34 @@ const List = () => {
     setItem({ item: event.target.value });
   };
 
+  let item = Object.values(getItem);
+
   const handleItems = () => {
-    setItems(items => [...items, Object.values(getItem)]);
+    setItems(items => [...items, item]);
   };
 
-  let itemList = Object.values(getItems.map(item => <li>{item}</li>));
+  let itemList = Object.values(
+    getItems.map(item => (
+      <div class="card">
+        <div class="card-body">
+          <h1>{item}</h1>
+          <p>Description </p>
+        </div>
+      </div>
+    ))
+  );
   return (
     <div>
-      <input
-        placeholder="item"
-        name="item"
-        value={Object.values(getItem)}
-        onChange={handleItem}
-      />
-      <button onClick={handleItems}>Add</button>
+      <div className="input">
+        <input
+          placeholder="item"
+          name="item"
+          value={Object.values(getItem)}
+          onChange={handleItem}
+        />
+        <button onClick={handleItems}>Add</button>
+      </div>
+
       <ul>{itemList}</ul>
     </div>
   );
