@@ -6,6 +6,7 @@ import "./App.css";
 import Nav from "./navbar";
 import List from "./list";
 import Home from "./home";
+import DJTutorials from "./djtutorials";
 
 const MainApp = () => {
   return (
@@ -15,6 +16,7 @@ const MainApp = () => {
         <div className="body">
           <Switch>
             <Route path="/" exact component={Home} />
+            <Route path="/djtutorials" exact component={DJTutorials} />
             <Route path="/home" component={Home} />
             <Route path="/list" component={List} />
           </Switch>
