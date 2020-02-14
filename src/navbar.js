@@ -11,11 +11,11 @@ const nav = () => {
     <nav>
       <h3>Project New</h3>
       <ul className="links">
-        <Link style={navStyle} to="/list">
-          <li>List</li>
-        </Link>
         <Link style={navStyle} to="/home">
           <li>Home</li>
+        </Link>
+        <Link style={navStyle} to="/list">
+          <li>List</li>
         </Link>
       </ul>
     </nav>
