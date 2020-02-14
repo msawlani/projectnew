@@ -15,8 +15,8 @@ const MainApp = () => {
         <div className="body">
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/list" component={List} />
             <Route path="/home" component={Home} />
+            <Route path="/list" component={List} />
           </Switch>
         </div>
       </div>
